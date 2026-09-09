@@ -32,3 +32,30 @@ ol {
 ul {
     padding-left: 100px;
 }
+
+table{
+    border-collapse: collapse;
+    width: 400px;
+    margin: 50px;
+}
+
+tr, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr :hover{
+    background-color: #DDDDDD;
+}
+
+th {
+    padding: 12px, 8px, 20px, 8px;
+    text-align: left;
+    background-color: #FF715B;
+     color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
