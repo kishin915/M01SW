@@ -59,3 +59,43 @@ tr:nth-child(even) {
     background-color: #F2F2F2;
 }
 
+h1 {
+    text-align: center;
+}
+
+form {
+    box-sizing: border-box;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+label, select, input {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4C5454;
+    font-size: 18px; 
+}
+
+select, input {
+    box-sizing: border-box;
+    background-color: #FF715B;
+    border: 1px solid #4C5454;
+    border-radius: 5px;
+    padding: 15px 0px 15px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+label, input {
+    margin-top: 30px;
+}
+
+input {
+    background-color: #FF715B;
+}
+
