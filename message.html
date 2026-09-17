@@ -1,31 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css"/>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8" />
         <title>Présentation des journaux lumineux</title>
+        <link rel="stylesheet" href="Style.css" />
     </head>
+
     <body>
-        
-        <form method="post" action="rest.php">
-         <h1>envoi d'un message</h1>
-        <label for="color-select">Selectionner un afficheur : </label>
-        <select id="color-select" name="ip_journal">
-            <option value="172.20.21.158">CPA</option>
-            <option value="172.20.21.231">CPB</option>
-            <option value="172.20.21.232">CE1A</option>
-            <option value="172.20.21.233">CE1B</option>
-            <option value="172.20.21.234">CE2A</option>
-            <option value="172.20.21.235">CE2B</option>
-            <option value="172.20.21.236">CM1A</option>
-            <option value="172.20.21.237">CM1B</option>
-            <option value="172.20.21.238">CM2A</option>
-            <option value="172.20.21.239">CM2B</option>
-        </select>
-        <label for="Message à envoyer">Message à envoyer : </label>
-        <input type="text" id="message à envoyer" name="texte">
-        <input type="submit" value="Envoyer" name="submit_SW05">
-        </form>
-        
+        <section id="message">
+            
+            <form method="POST" action="rest.php">
+                <h1>Envoie d'un message</h1>
+                <label for="color-select">Sélectionner un afficheur : </label>
+                <select id="color-select" name="ip_journal">
+                    <option value="172.20.21.158">CP A</option>
+                    <option value="172.20.21.231">CP B</option>
+                    <option value="172.20.21.232">CE1 A</option>
+                    <option value="172.20.21.233">CE1 B</option>
+                    <option value="172.20.21.234">CE2 A</option>
+                    <option value="172.20.21.235">CE2 B</option>
+                    <option value="172.20.21.236">CM1 A</option>
+                    <option value="172.20.21.237">CM1 B</option>
+                    <option value="172.20.21.238">CM2 A</option>
+                    <option value="172.20.21.239">CM2 B</option>
+                </select>
+                <label for="message-select">Effet d'apparition : </label>
+                <select id="select-effetapparition" name="effetapparition">
+                    <option value="MA">Normal</option>
+                    <option value="MB">Blinking</option>
+                    <option value="MC">Play pre-defined song 1</option>
+                    <option value="MD">Play pre-defined song 2</option>
+                    <option value="ME">Play pre-defined song 3</option>
+                    <option value="MQ">Normal</option>
+                    <option value="MR">Blinking</option>
+                    <option value="MS">Play pre-defined song 1</option>
+                    <option value="MT">Play pre-defined song 2</option>
+                    <option value="MU">Play pre-defined song 3</option>
+                    <option value="Ma">Normal</option>
+                    <option value="Mb">Blinking</option>
+                    <option value="Mc">Play pre-defined song 1</option>
+                    <option value="Md">Play pre-defined song 2</option>
+                    <option value="Me">Play pre-defined song 3</option>
+                    <option value="Mq">Normal</option>
+                    <option value="Mr">Blinking</option>
+                    <option value="Ms">Play pre-defined song 1</option>
+                    <option value="Mt">Play pre-defined song 2</option>
+                    <option value="Mu">Play pre-defined song 3</option>
+                </select>
+                <label for="message-select">Effet d'affichage : </label>
+                <select id="select-effetaffichage" name="effetaffichage">
+                    <option value="FA">Immediate</option>
+                    <option value="FB">Xopen</option>
+                    <option value="FC">Curtain Up</option>
+                    <option value="FE">Scroll Left</option>
+                    <option value="FF">Scroll Right</option>
+                    <option value="FG">Vopen</option>
+                    <option value="FH">Vclose</option>
+                    <option value="FI">Scroll Up</option>
+                    <option value="FJ">Scroll Down</option>
+                    <option value="FK">Hold</option>
+                    <option value="FL">Snow</option>
+                    <option value="FM">Twinkle</option>
+                    <option value="FN">Block Move</option>
+                    <option value="FP">Random</option>
+                    <option value="FQ">Pen writting 'Hello World'</option>
+                    <option value="FR">Pen writting 'Welcome'</option>
+                    <option value="FS">Pen writting 'Amplus'</option>
+                </select>
+                <label for="message-select">Durée d'affichage : </label>
+                <select id="select-dureeaffichage" name="dureeaffichage">
+                    <option value="WA">0.5 sec</option>
+                    <option value="WB">1 sec</option>
+                    <option value="WC">2 sec</option>
+                    <option value="WD">3 sec</option>
+                    <option value="WZ">25 sec</option>
+                </select>
+                <label for="message-select">Effet de disparition : </label>
+                <select id="select-effetdisparition" name="effetdisparition">
+                    <option value="FA">Immediate</option>
+                    <option value="FB">Xopen</option>
+                    <option value="FC">Curtain Up</option>
+                    <option value="FD">Curtain Down</option>
+                    <option value="FE">Scroll Left</option>
+                    <option value="FF">Scroll Right</option>
+                    <option value="FG">Vopen</option>
+                    <option value="FH">Vclose</option>
+                    <option value="FI">Scroll Up</option>
+                    <option value="FJ">Scroll Down</option>
+                    <option value="FK">Hold</option>
+                </select>
+                <label for="message-select">Message à envoyer : </label>
+                <input type="text" id="message-select" name="texte">
+                <input type="submit" value="Envoyer" name="submit_SW05">
+            </form>
+
+        </section>
     </body>
 </html>
+ 

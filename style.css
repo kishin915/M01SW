@@ -33,16 +33,23 @@ ul {
     padding-left: 100px;
 }
 
-table{
+table, th, td{
     border-collapse: collapse;
     width: 400px;
     margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 tr, td {
     border: 1px solid #ddd;
     padding: 8px;
 }
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
 
 tr :hover{
     background-color: #DDDDDD;
@@ -53,10 +60,6 @@ th {
     text-align: left;
     background-color: #FF715B;
      color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #F2F2F2;
 }
 
 h1 {
